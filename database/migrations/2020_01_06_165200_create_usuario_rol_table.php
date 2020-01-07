@@ -19,7 +19,7 @@ class CreateUsuarioRolTable extends Migration
                         user_id int,
                         estado tinyint(1),
                         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                        update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                         constraint pk_usuario_rol primary key(id),
                         constraint fk_usuario_rol_usuario foreign key(user_id)
                         references usuario(id),

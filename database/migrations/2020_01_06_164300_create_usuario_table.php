@@ -19,7 +19,7 @@ class CreateUsuarioTable extends Migration
                     usuario varchar (45),
                     password varchar (45),
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                    update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                     constraint pk_id_usuario primary key(id)
                   );');
     }

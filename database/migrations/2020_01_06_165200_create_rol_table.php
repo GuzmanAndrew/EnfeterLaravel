@@ -17,7 +17,7 @@ class CreateRolTable extends Migration
                     id  int auto_increment,
                     nombre varchar (45),
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                    update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                     constraint pk_id_rol primary key(id)
                   );');
     }

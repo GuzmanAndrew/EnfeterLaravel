@@ -77,7 +77,7 @@ class CreateEmpleadosTable extends Migration
                       Estado TINYINT(1),
                       usuario_id INT NOT NULL,
                       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                      update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                       constraint pk_idEmpleado PRIMARY KEY (IdEmpleado),
                       CONSTRAINT fk_empleados_usuario1 FOREIGN KEY (usuario_id)
                         REFERENCES usuario (id)

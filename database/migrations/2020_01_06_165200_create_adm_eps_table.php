@@ -21,7 +21,7 @@ class CreateAdmEpsTable extends Migration
                       CodEps VARCHAR(20),
                       Estado TINYINT(1),
                       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                      update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                       constraint pk_idEps PRIMARY KEY (IdEps)
                       );');
     }

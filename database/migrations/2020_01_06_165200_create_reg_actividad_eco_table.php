@@ -20,7 +20,7 @@ class CreateRegActividadEcoTable extends Migration
                         codigo SMALLINT(4),
                         actividad VARCHAR(300),
                         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                        update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                         constraint pk_id_reg_actividad primary key(id)
                     );');
     }

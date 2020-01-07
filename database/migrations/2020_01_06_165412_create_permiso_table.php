@@ -15,10 +15,10 @@ class CreatePermisoTable extends Migration
     {
         DB::statement('CREATE TABLE permiso(
                     id  int auto_increment,
-                    nombre varchar (45),
-                    slug varchar (45),
+                    nombre varchar(45),
+                    slug varchar(45),
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                    update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                     constraint pk_id_permiso primary key(id)
                   );');
     }

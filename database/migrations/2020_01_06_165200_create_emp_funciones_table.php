@@ -18,6 +18,8 @@ class CreateEmpFuncionesTable extends Migration
                       Descripcion VARCHAR(200),
                       Roles VARCHAR(50),
                       Estado TINYINT(1),
+                      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                       constraint pk_idRole PRIMARY KEY (IdRole)
                       );');
     }

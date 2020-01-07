@@ -41,7 +41,7 @@ class CreateProovedoresTable extends Migration
                       Activo TINYINT(1),
                       usuario_id INT,
                       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                      update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                       constraint pk_idProve PRIMARY KEY (IdProve),
                       CONSTRAINT fk_proveedores_usuario
                         FOREIGN KEY (usuario_id)

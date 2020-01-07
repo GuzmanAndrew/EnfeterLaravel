@@ -18,7 +18,7 @@ class CreatePermisoRolTable extends Migration
                     rol_id int,
                     permiso_id int,
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                    update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                    updated_at_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                     constraint pk_id_permiso_rol primary key(id),
                     constraint fk_permiso_rol_rol foreign key(rol_id)
                     references rol(id),

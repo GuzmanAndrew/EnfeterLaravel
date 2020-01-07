@@ -19,7 +19,7 @@ class CreateBancosTable extends Migration
                       Nombre VARCHAR(100),
                       Activo TINYINT(1),
                       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                      update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                       constraint pk_bancos PRIMARY KEY (IdBanco)
                       );');
     }

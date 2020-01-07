@@ -57,7 +57,7 @@ class CreatePacientesTable extends Migration
                       Activo TINYINT(1),
                       usuario_id INT,
                       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                      update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                       constraint pk_idCliente PRIMARY KEY (IdCliente),
                       CONSTRAINT fk_pacientes_usuario
                         FOREIGN KEY (usuario_id)

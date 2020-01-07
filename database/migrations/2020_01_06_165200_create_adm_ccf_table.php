@@ -21,7 +21,7 @@ class CreateAdmCcfTable extends Migration
                       CodCcf VARCHAR(20),
                       Estado TINYINT(1),
                       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                      update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                       constraint pk_idCcf PRIMARY KEY (IdCCF)
                       );');
     }
