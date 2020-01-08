@@ -1,7 +1,6 @@
 /node_modules
 /public/hot
 /public/storage
-/public/assets/adminLte
 /storage/*.key
 /vendor
 .env
